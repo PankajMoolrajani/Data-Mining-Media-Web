@@ -5,9 +5,7 @@ machine:
 dependencies:
   override:
     - docker info
-    - echo $PWD
-    - ls
-    - docker build -t circleci/dmm-web -f ./Dockerfile
+    - docker build -t dmm-web .
 
 test:
   override:
