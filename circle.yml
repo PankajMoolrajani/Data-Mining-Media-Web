@@ -1,10 +1,13 @@
 machine:
   services:
     - docker
+
 dependencies:
   override:
-    - docker build -t dmm-web-docker-test .
+    - docker info
+    - docker build -t circleci/dmm-web .
+
 test:
   override:
-    - docker run -d -p 6080:80 dmm-web-docker-test
-
+    - docker run -d -p 6080:80 circleci/dmm-web; sleep 10
+    - curl --retry 10 --retry-delay 5 -v http://localhost:6080
