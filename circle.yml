@@ -1,7 +1,10 @@
 machine:
   services:
     - docker
-test:
+dependencies:
   override:
     - docker build -t dmm-web-docker-test .
+test:
+  override:
+    - docker run -d -p 6080:80 dmm-web-docker-test
 
