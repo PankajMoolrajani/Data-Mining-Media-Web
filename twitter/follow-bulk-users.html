@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <!-- This site was created in Webflow. http://www.webflow.com-->
 <!-- Last Published: Fri Jul 22 2016 15:33:54 GMT+0000 (UTC) -->
-<html data-wf-site="5766be72bd63608e7eb4565e" data-wf-page="578a856a88d369f92a538ce5">
+<html data-wf-site="5766be72bd63608e7eb4565e" data-wf-page="57922b3aa55e17ca4ee40680">
 <head>
   <meta charset="utf-8">
-  <title>DMM: Twitter</title>
-  <meta property="og:title" content="DMM: Twitter">
+  <title>follow-bulk-users</title>
+  <meta property="og:title" content="follow-bulk-users">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="generator" content="Webflow">
   <link rel="stylesheet" type="text/css" href="../css/normalize.css">
@@ -129,19 +129,16 @@
         </div>
         <div class="body-column-content w-col w-col-10">
           <div class="content-div-1">
-            <div class="twitter-api-profiles-create-div-1">
-              <div class="w-form">
-                <form data-name="Email Form" id="email-form" name="email-form">
-                  <label for="twitter_handle">Twitter Handle</label>
-                  <input autofocus="autofocus" class="twitter-api-profiles-create-txt-1 w-input" data-name="twitter_handle" id="twitter_handle" maxlength="256" name="twitter_handle" placeholder="enter twitter handle/username" required="required" type="text">
-                  <label for="key_consumer">Key Consumer</label>
-                  <input class="twitter-api-profiles-create-txt-1 w-input" data-name="key_consumer" id="key_consumer" maxlength="256" name="key_consumer" placeholder="enter key_consumer from twitter app" required="required" type="email">
-                  <label for="secret_consumer">Secret Consumer</label>
-                  <input class="twitter-api-profiles-create-txt-1 w-input" data-name="secret_consumer" id="secret_consumer" maxlength="256" name="secret_consumer" placeholder="enter secret_consumer from twitter app" required="required" type="email">
-                  <label for="key_access">Key Access</label>
-                  <input class="twitter-api-profiles-create-txt-1 w-input" data-name="key_access" id="key_access" maxlength="256" name="key_access" placeholder="enter key_access from twitter app" required="required" type="email">
-                  <label for="secret_access">Secret Access</label>
-                  <input class="twitter-api-profiles-create-txt-1 w-input" data-name="secret_access" id="secret_access" maxlength="256" name="secret_access" placeholder="enter secret_access from twitter app" required="required" type="email">
+            <div class="twitter-follow-users-bulk-div-3">
+              <div class="content-div-heading-txt-1">Follow - Bulk Users</div>
+            </div>
+            <div class="twitter-follow-bulk-users-div-1">
+              <div class="form-wrapper w-form">
+                <form class="follow-bulk-users-form-1" data-name="Email Form" data-redirect="/twitter/follow-bulk-users" id="email-form" method="post" name="email-form">
+                  <label for="job_name">Job Name</label>
+                  <input autofocus="autofocus" class="twitter-api-profiles-create-txt-1 w-input" data-name="job_name" id="job_name" maxlength="256" name="job_name" placeholder="enter a job name as per your convenience" required="required" type="text">
+                  <label for="csv_file_link-3">CSV File Link</label>
+                  <input autofocus="autofocus" class="twitter-api-profiles-create-txt-1 w-input" data-name="csv_file_link" id="csv_file_link-3" maxlength="256" name="csv_file_link" placeholder="enter url of the csv file (use filecloud)" required="required" type="text">
                   <input class="button w-button" data-wait="Please wait..." type="submit" value="Submit">
                 </form>
                 <div class="w-form-done">
@@ -149,6 +146,159 @@
                 </div>
                 <div class="w-form-fail">
                   <div>Oops! Something went wrong while submitting the form</div>
+                </div>
+              </div>
+            </div>
+            <div class="twitter-follow-bulk-users-div-2">
+              <div class="content-div-heading-txt-2">Job Status</div>
+              <div class="twitter-follow-bulk-users-row-1 w-row">
+                <div class="w-col w-col-1">
+                  <div>Job #</div>
+                </div>
+                <div class="w-col w-col-4">
+                  <div>Job Name</div>
+                </div>
+                <div class="w-col w-col-1">
+                  <div>Start Dt</div>
+                </div>
+                <div class="w-col w-col-1">
+                  <div>End Dt</div>
+                </div>
+                <div class="w-col w-col-3">
+                  <div class="w-row">
+                    <div class="w-col w-col-4">
+                      <div>Success</div>
+                    </div>
+                    <div class="w-col w-col-4">
+                      <div>Failure</div>
+                    </div>
+                    <div class="w-col w-col-4">
+                      <div>Total</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="w-col w-col-2">
+                  <div>Status</div>
+                </div>
+              </div>
+              <div class="twitter-follow-bulk-users-row-2 w-row">
+                <div class="w-col w-col-1">
+                  <div>1</div>
+                </div>
+                <div class="w-col w-col-4">
+                  <div>Twitter - Japan - Taylor Swift - 01</div>
+                </div>
+                <div class="w-col w-col-1">
+                  <div>07/25/16</div>
+                </div>
+                <div class="w-col w-col-1">
+                  <div>07/30/16</div>
+                </div>
+                <div class="w-col w-col-3">
+                  <div class="w-row">
+                    <div class="w-col w-col-4">
+                      <div>5000</div>
+                    </div>
+                    <div class="w-col w-col-4">
+                      <div>200</div>
+                    </div>
+                    <div class="w-col w-col-4">
+                      <div>5200</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="w-col w-col-2">
+                  <div>In Progress</div>
+                </div>
+              </div>
+              <div class="twitter-follow-bulk-users-row-2 w-row">
+                <div class="w-col w-col-1">
+                  <div>1</div>
+                </div>
+                <div class="w-col w-col-4">
+                  <div>Twitter - Japan - Taylor Swift - 01</div>
+                </div>
+                <div class="w-col w-col-1">
+                  <div>07/25/16</div>
+                </div>
+                <div class="w-col w-col-1">
+                  <div>07/30/16</div>
+                </div>
+                <div class="w-col w-col-3">
+                  <div class="w-row">
+                    <div class="w-col w-col-4">
+                      <div>5000</div>
+                    </div>
+                    <div class="w-col w-col-4">
+                      <div>200</div>
+                    </div>
+                    <div class="w-col w-col-4">
+                      <div>5200</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="w-col w-col-2">
+                  <div>In Progress</div>
+                </div>
+              </div>
+              <div class="twitter-follow-bulk-users-row-2 w-row">
+                <div class="w-col w-col-1">
+                  <div>1</div>
+                </div>
+                <div class="w-col w-col-4">
+                  <div>Twitter - Japan - Taylor Swift - 01</div>
+                </div>
+                <div class="w-col w-col-1">
+                  <div>07/25/16</div>
+                </div>
+                <div class="w-col w-col-1">
+                  <div>07/30/16</div>
+                </div>
+                <div class="w-col w-col-3">
+                  <div class="w-row">
+                    <div class="w-col w-col-4">
+                      <div>5000</div>
+                    </div>
+                    <div class="w-col w-col-4">
+                      <div>200</div>
+                    </div>
+                    <div class="w-col w-col-4">
+                      <div>5200</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="w-col w-col-2">
+                  <div>In Progress</div>
+                </div>
+              </div>
+              <div class="twitter-follow-bulk-users-row-2 w-row">
+                <div class="w-col w-col-1">
+                  <div>1</div>
+                </div>
+                <div class="w-col w-col-4">
+                  <div>Twitter - Japan - Taylor Swift - 01</div>
+                </div>
+                <div class="w-col w-col-1">
+                  <div>07/25/16</div>
+                </div>
+                <div class="w-col w-col-1">
+                  <div>07/30/16</div>
+                </div>
+                <div class="w-col w-col-3">
+                  <div class="w-row">
+                    <div class="w-col w-col-4">
+                      <div>5000</div>
+                    </div>
+                    <div class="w-col w-col-4">
+                      <div>200</div>
+                    </div>
+                    <div class="w-col w-col-4">
+                      <div>5200</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="w-col w-col-2">
+                  <div>In Progress</div>
                 </div>
               </div>
             </div>

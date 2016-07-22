@@ -3111,7 +3111,7 @@
 	    data.open = false;
 	    data.button.removeClass(buttonOpen);
 	    var config = data.config;
-	    if (config.animation === 'none' || !tram.support.transform) immediate = true;
+	    if (config.animation === 'none' || !tram.support.transform || config.duration <= 0) immediate = true;
 	    ix.outro(0, data.el[0]);
 
 	    // Stop listening for tap outside events
