@@ -200,6 +200,11 @@ p {
 }
 
 .section-body {
+  position: static;
+  left: 0px;
+  top: 0px;
+  bottom: 0px;
+  display: block;
   background-color: #474a4d;
   font-family: Lato, sans-serif;
   color: #000;
@@ -208,30 +213,48 @@ p {
 }
 
 .header-div-1 {
-  padding-top: 15px;
-  padding-bottom: 15px;
+  height: 7%;
+  padding-top: 1%;
+  padding-bottom: 1%;
   background-color: #222;
+  color: #f5f5f5;
   font-size: 35px;
   text-align: center;
 }
 
+.body-div-1 {
+  height: 90%;
+}
+
 .footer-div-1 {
-  padding-top: 10px;
-  padding-bottom: 10px;
+  position: absolute;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
+  height: 3%;
+  padding-top: 0%;
+  padding-bottom: 0.5%;
   padding-left: 10px;
   background-color: #222;
-  color: #aaa;
+  color: #f5f5f5;
+}
+
+.body-row-1 {
+  height: 100%;
 }
 
 .body-column-sidebar {
+  height: 100%;
   padding-left: 5px;
 }
 
 .body-column-content {
+  height: 100%;
   padding-left: 0px;
 }
 
 .sidebar-div-1 {
+  height: 100%;
   font-size: 13px;
   font-weight: 400;
 }
@@ -240,7 +263,6 @@ p {
   display: block;
   padding-right: 5px;
   float: none;
-  border-right: 1px solid #000;
   text-align: left;
   cursor: pointer;
 }
@@ -254,6 +276,7 @@ p {
 }
 
 .content-div-1 {
+  height: 100%;
   padding-left: 10px;
   border-left: 2px solid #000;
 }
@@ -266,12 +289,23 @@ p {
   display: inline-block;
 }
 
+.sidebar-row-1 {
+  height: 100%;
+}
+
+.sidebar-column-1 {
+  height: 100%;
+  border-right: 1px solid #000;
+}
+
 .sidebar-column-2 {
   display: block;
+  height: 100%;
 }
 
 .sidebar-subcategory-twitter-div-1 {
   display: block;
+  padding-left: 10%;
 }
 
 .sidebar-subcategory-div-2 {
@@ -312,6 +346,55 @@ p {
 
 .twitter-api-profiles-create-txt-1 {
   width: 400px;
+}
+
+.section-full-website.section-body {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  right: 0px;
+  bottom: 1px;
+  display: block;
+  height: 100%;
+}
+
+.twitter-follow-bulk-users-div-2 {
+  margin-top: 25px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.twitter-follow-bulk-users-row-1 {
+  margin-top: 15px;
+  border: 1px solid #000;
+  text-align: center;
+}
+
+.twitter-follow-bulk-users-row-2 {
+  border-right: 1px solid #000;
+  border-bottom: 1px solid #000;
+  border-left: 1px solid #000;
+  font-size: 13px;
+  font-weight: 400;
+  text-align: center;
+}
+
+.text-success {
+  color: #3dff00;
+}
+
+.text-failure {
+  color: #ff000a;
+}
+
+.content-div-heading-txt-1 {
+  padding-top: 15px;
+  padding-bottom: 25px;
+  font-size: 25px;
+}
+
+.content-div-heading-txt-2 {
+  font-size: 18px;
 }
 
 @media (max-width: 991px) {
