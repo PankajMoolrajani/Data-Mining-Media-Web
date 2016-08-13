@@ -1,5 +1,5 @@
 //var login_url="http://localhost:5000/auth/token/get"; // for dev
-var login_url="http://dataminingmedia.com:6000/auth/token/get"; // for server
+var login_url="http://dataminingmedia.com:5050/auth/token/get"; // for server
 
 
 $(document).ready(function() {
