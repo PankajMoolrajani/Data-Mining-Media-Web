@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <!-- This site was created in Webflow. http://www.webflow.com-->
 <!-- Last Published: Sat Aug 13 2016 19:21:58 GMT+0000 (UTC) -->
-<html data-wf-page="57922b3aa55e17ca4ee40680" data-wf-site="5766be72bd63608e7eb4565e">
+<html data-wf-page="57aea2dee18710ca1647576a" data-wf-site="5766be72bd63608e7eb4565e">
 <head>
   <meta charset="utf-8">
-  <title>follow-bulk-users</title>
-  <meta content="follow-bulk-users" property="og:title">
+  <title>follow-by-hashtag</title>
+  <meta content="follow-by-hashtag" property="og:title">
   <meta content="width=device-width, initial-scale=1" name="viewport">
   <meta content="Webflow" name="generator">
   <link href="../css/normalize.css" rel="stylesheet" type="text/css">
@@ -26,7 +26,8 @@
 <body>
   <div class="section-body section-full-website">
     <div class="header-div-1">
-      <div>DMM</div>
+      <div class="header-text-1">DMM</div>
+      <a class="button-logout w-button" href="#">Logout</a>
     </div>
     <div class="body-div-1">
       <div class="body-row-1 w-row">
@@ -129,18 +130,16 @@
         </div>
         <div class="body-column-content w-col w-col-10">
           <div class="content-div-1">
-            <div class="twitter-follow-users-bulk-div-3">
+            <div class="twitter-follow-by-hashtag-div-3">
               <div class="content-div-heading-txt-1">Follow - Bulk Users</div>
             </div>
-            <div class="twitter-follow-bulk-users-div-1">
+            <div class="twitter-follow-by-hashtag-div-1">
               <div class="form-wrapper w-form">
-                <form class="follow-bulk-users-form-1" data-name="Email Form" data-redirect="/twitter/follow-bulk-users" id="email-form" method="post" name="email-form">
+                <form class="twitter-follow-by-hashtag-form-1" data-name="Email Form" data-redirect="/twitter/follow-bulk-users" id="email-form" method="post" name="email-form">
                   <label for="job_name">Job Name</label>
                   <input autofocus="autofocus" class="text-field-1 w-input" data-name="job_name" id="job_name" maxlength="256" name="job_name" placeholder="enter a job name as per your convenience" required="required" type="text">
-                  <label for="csv_file_link-3">CSV File</label>
-                  <div class="follow-bulk-users-file-1 w-embed">
-                    <input type='file' name='file' title='yo'>
-                  </div>
+                  <label for="hashtag">Hashtag</label>
+                  <input autofocus="autofocus" class="text-field-1 w-input" data-name="hashtag" id="hashtag" maxlength="256" name="hashtag" placeholder="enter hashtag to follow specific group of users" required="required" type="text">
                   <input class="button w-button" data-wait="Please wait..." type="submit" value="Submit">
                 </form>
                 <div class="w-form-done">
@@ -151,7 +150,7 @@
                 </div>
               </div>
             </div>
-            <div class="twitter-follow-bulk-users-div-2">
+            <div class="twitter-follow-by-hashtag-div-2">
               <div class="content-div-heading-txt-2">Job Status</div>
               <div class="twitter-follow-bulk-users-row-1 w-row">
                 <div class="w-col w-col-1">
