@@ -358,6 +358,10 @@ p {
   height: 100%;
 }
 
+.follow-bulk-users-form-1 {
+  padding-left: 0px;
+}
+
 .twitter-follow-bulk-users-div-2 {
   margin-top: 25px;
   padding-top: 10px;
@@ -395,6 +399,16 @@ p {
 
 .content-div-heading-txt-2 {
   font-size: 18px;
+}
+
+.follow-bulk-users-file-1 {
+  margin-top: 0px;
+  margin-bottom: 20px;
+  padding-top: auto;
+  padding-bottom: auto;
+  padding-left: 0px;
+  font-size: 12px;
+  font-weight: 400;
 }
 
 @media (max-width: 991px) {
