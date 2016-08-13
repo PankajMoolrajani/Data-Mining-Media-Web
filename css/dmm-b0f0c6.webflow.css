@@ -98,6 +98,7 @@ p {
 }
 
 .hero-subtitle {
+  margin-bottom: 15px;
   color: hsla(0, 0%, 100%, .7);
   font-size: 16px;
   line-height: 22px;
@@ -154,6 +155,7 @@ p {
 
 .button {
   padding: 11px 19px;
+  float: none;
   border-style: solid;
   border-width: 1px;
   border-color: rgba(248, 199, 41, .7);
@@ -344,7 +346,7 @@ p {
   padding-top: 10px;
 }
 
-.twitter-api-profiles-create-txt-1 {
+.text-field-1 {
   width: 400px;
 }
 
@@ -356,6 +358,10 @@ p {
   bottom: 1px;
   display: block;
   height: 100%;
+}
+
+.follow-bulk-users-form-1 {
+  padding-left: 0px;
 }
 
 .twitter-follow-bulk-users-div-2 {
@@ -395,6 +401,38 @@ p {
 
 .content-div-heading-txt-2 {
   font-size: 18px;
+}
+
+.follow-bulk-users-file-1 {
+  margin-top: 0px;
+  margin-bottom: 20px;
+  padding-top: auto;
+  padding-bottom: auto;
+  padding-left: 0px;
+  font-size: 12px;
+  font-weight: 400;
+}
+
+.scripts {
+  display: none;
+}
+
+.header-text-1 {
+  width: 95%;
+  margin-top: 5px;
+}
+
+.button-logout {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  display: inline-block;
+  height: 7%;
+  padding: 1.5% 10px 10px;
+  float: none;
+  background-color: rgba(248, 199, 41, .7);
+  font-size: 15px;
+  font-weight: 300;
 }
 
 @media (max-width: 991px) {
